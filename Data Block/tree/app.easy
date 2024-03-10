@@ -1,0 +1,254 @@
+{
+    "_id_": 2,
+    "_type": "App",
+    "features": {
+        "_id_": 4,
+        "_type": "App.Features",
+        "list_": [
+            {
+                "_id_": 133,
+                "_type": "Activity",
+                "icon": {
+                    "_id_": 171,
+                    "_type": "DrawableReference",
+                    "ref": {
+                        "_id_": 173,
+                        "_type": "String",
+                        "value_": "@drawable\/app_icon"
+                    }
+                },
+                "features": {
+                    "_id_": 135,
+                    "_type": "Activity.Features",
+                    "list_": [
+                        {
+                            "_id_": 235,
+                            "_type": "Function",
+                            "name": {
+                                "_id_": 239,
+                                "_type": "String",
+                                "value_": "getinstalledrelatedapps()"
+                            },
+                            "body": {
+                                "_id_": 237,
+                                "_type": "Sequence",
+                                "list_": [
+                                    {
+                                        "_id_": 288,
+                                        "_type": "Permissions.Check",
+                                        "onGranted": {
+                                            "_id_": 294,
+                                            "_type": "Network.CheckState",
+                                            "ifConnected": {
+                                                "_id_": 306,
+                                                "_type": "Sequence",
+                                                "list_": [
+                                                    {
+                                                        "_id_": 363,
+                                                        "_type": "True"
+                                                    }
+                                                ]
+                                            },
+                                            "ifMobileConnected": {
+                                                "_id_": 302,
+                                                "_type": "Sequence",
+                                                "list_": [
+                                                    {
+                                                        "_id_": 365,
+                                                        "_type": "True"
+                                                    }
+                                                ]
+                                            },
+                                            "ifNotConnected": {
+                                                "_id_": 308,
+                                                "_type": "Sequence",
+                                                "list_": [
+                                                    {
+                                                        "_id_": 367,
+                                                        "_type": "True"
+                                                    }
+                                                ]
+                                            },
+                                            "ifWifiConnected": {
+                                                "_id_": 304,
+                                                "_type": "Sequence",
+                                                "list_": [
+                                                    {
+                                                        "_id_": 369,
+                                                        "_type": "True"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "theme": {
+                    "_id_": 233,
+                    "_type": "AndroidTheme",
+                    "value_": "Theme.AppCompat"
+                },
+                "contentView": {
+                    "_id_": 410,
+                    "_type": "Drawer",
+                    "requestFocus": {
+                        "_id_": 431,
+                        "_type": "Boolean",
+                        "value_": true
+                    },
+                    "persist": {
+                        "_id_": 433,
+                        "_type": "Persist"
+                    },
+                    "id": {
+                        "_id_": 424,
+                        "_type": "String",
+                        "value_": ""
+                    },
+                    "views": {
+                        "_id_": 422,
+                        "_type": "ViewList",
+                        "list_": []
+                    },
+                    "menu": {
+                        "_id_": 412,
+                        "_type": "Drawer.NativeMenu",
+                        "id": {
+                            "_id_": 420,
+                            "_type": "String",
+                            "value_": ""
+                        },
+                        "views": {
+                            "_id_": 418,
+                            "_type": "ViewList",
+                            "list_": []
+                        },
+                        "menu": {
+                            "_id_": 414,
+                            "_type": "Menu",
+                            "items": {
+                                "_id_": 416,
+                                "_type": "List",
+                                "list_": [],
+                                "elementType_": "Menu.Element"
+                            }
+                        }
+                    },
+                    "header": {
+                        "_id_": 426,
+                        "_type": "RelativeLayout",
+                        "id": {
+                            "_id_": 430,
+                            "_type": "String",
+                            "value_": ""
+                        }
+                    }
+                },
+                "name": {
+                    "_id_": 144,
+                    "_type": "String",
+                    "value_": "Click4Ad"
+                }
+            }
+        ]
+    },
+    "settings": {
+        "_id_": 6,
+        "_type": "App.Settings",
+        "debugBuild": {
+            "_id_": 8,
+            "_type": "App.Settings.DebugBuild"
+        },
+        "releaseBuild": {
+            "_id_": 10,
+            "_type": "App.Settings.ReleaseBuild"
+        }
+    },
+    "packaging": {
+        "_id_": 12,
+        "_type": "App.Packaging",
+        "installLocation": {
+            "_id_": 174,
+            "_type": "App.InstallLocation",
+            "value_": "preferExternal"
+        },
+        "icon": {
+            "_id_": 73,
+            "_type": "AdaptiveIcon",
+            "background": {
+                "_id_": 74,
+                "_type": "Color",
+                "color_": -1
+            },
+            "foreground": {
+                "_id_": 75,
+                "_type": "DrawableReference",
+                "ref": {
+                    "_id_": 76,
+                    "_type": "String",
+                    "value_": "@drawable\/app_icon"
+                }
+            },
+            "legacyIcon": {
+                "_id_": 77,
+                "_type": "MipmapReference",
+                "ref": {
+                    "_id_": 78,
+                    "_type": "String",
+                    "value_": "@mipmap\/app_icon"
+                }
+            }
+        },
+        "targetSdk": {
+            "_id_": 17,
+            "_type": "Integer",
+            "value_": 33
+        },
+        "label": {
+            "_id_": 55,
+            "_type": "String",
+            "value_": "Java App"
+        },
+        "versionName": {
+            "_id_": 19,
+            "_type": "String",
+            "value_": "1.0"
+        },
+        "versionCode": {
+            "_id_": 20,
+            "_type": "Integer",
+            "value_": 1
+        },
+        "minSdk": {
+            "_id_": 21,
+            "_type": "Integer",
+            "value_": 24
+        },
+        "permissions": {
+            "_id_": 23,
+            "_type": "App.Permissions"
+        },
+        "packageName": {
+            "_id_": 26,
+            "_type": "String",
+            "value_": "com.everheartdigitaldev.datablockapp"
+        }
+    },
+    "firebase": {
+        "_id_": 99,
+        "_type": "Firebase.Settings",
+        "authentication": {
+            "_id_": 101,
+            "_type": "Firebase.Settings.Authentication",
+            "google": {
+                "_id_": 103,
+                "_type": "Boolean",
+                "value_": true
+            }
+        }
+    },
+    "_abVer": 224
+}
